@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+
+    char ch;
+    char *fname = "deta.txt";
+    char *mode = "r";
+    FILE *fp = fopen(fname, mode);
+
+    if (fp == NULL) {
+        printf("--File open failed.--\n");
+    } else {
+        while ((ch = fgetc(fp)) != EOF) {
+            printf(" %c", ch);
+        }
+        fclose(fp);
+    }
+
+    return 0;
+}
