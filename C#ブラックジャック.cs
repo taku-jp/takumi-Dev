@@ -100,7 +100,7 @@ namespace BlackJackTest
         }
 
         /// <summary>
-        /// カードを引く処理（見た目の改善含む）
+        /// カードを引く処理
         /// </summary>
         private void DrawCard(int turnNum, List<int> cards, int[] totalScores, Random random)
         {
