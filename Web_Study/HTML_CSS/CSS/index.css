@@ -1,0 +1,65 @@
+@charset "utf-8";
+body {
+    background-color: #640202;
+  }
+  
+.glowing-heading {
+    text-align: center;
+    background-color: #01ff23;
+  }
+  
+h1.link {
+    font-size:10px;
+    
+  }
+.custom-font {
+    font-family: "MS Mincho", serif;
+  }
+  #font1 {
+    font-family: "Freestyle Script", cursive;
+    font-size: 50px;
+  }
+  .link a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  @keyframes glowing {
+    0% {
+      opacity: 1;
+      text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0;
+    }
+    50% {
+      opacity: 0.2;
+      text-shadow: none;
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0;
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      opacity: 1;
+      text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 100px #ff0;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 100px #ff0;
+      transform: translateX(100%);
+    }
+  }
+  
+  .glowing-heading {
+    position: relative;
+    animation: move 10s linear infinite, glowing 10s linear infinite;
+  }
+  
+  
