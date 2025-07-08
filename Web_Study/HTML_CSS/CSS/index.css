@@ -1,13 +1,21 @@
 @charset "utf-8";
 body {
-    background-color: #640202;
+    background-color: #62e4c8;
   }
   
 .glowing-heading {
     text-align: center;
     background-color: #01ff23;
   }
-  
+  h3{
+    color: #ffffff;
+  }
+  h4{
+    color: #ffffff;
+  }
+  value{
+    color: #ffffff;
+  }
 h1.link {
     font-size:10px;
     
